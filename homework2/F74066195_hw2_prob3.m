@@ -3,10 +3,10 @@ b=1;
 error = 100;
 count = 0;
 p=0;
-while abs(error) > 10^-8
+while abs(error) > 10^-8 % Bisection Method
     p_pre = p;
     p = (a+b)/2;
-    if prob3_f(p)>0
+    if prob3_f(p)>0 % f(x) = ln(x^2 + 1) - exp(0.4*x)cos(pi*x)
         b = p;
     else
         a = p;
@@ -24,7 +24,7 @@ p=0;
 while abs(error) > 10^-8
     p_pre = p;
     p = (a+b)/2;
-    if prob3_f(p)>0
+    if prob3_f(p)>0 % f(x) = ln(x^2 + 1) - exp(0.4*x)cos(pi*x)
         b = p;
     else
         a = p;
@@ -42,7 +42,7 @@ p=0;
 while abs(error) > 10^-8
     p_pre = p;
     p = (a+b)/2;
-    if prob3_g(p)>0
+    if prob3_g(p)>0 % g(x) = 230x^4 + 18x^3 + 9x^2 - 221x - 9
         b = p;
     else
         a = p;
@@ -60,7 +60,7 @@ p=0;
 while abs(error) > 10^-8
     p_pre = p;
     p = (a+b)/2;
-    if prob3_g(p)>0
+    if prob3_g(p)>0 % g(x) = 230x^4 + 18x^3 + 9x^2 - 221x - 9
         b = p;
     else
         a = p;
