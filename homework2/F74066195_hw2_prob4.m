@@ -1,17 +1,10 @@
-a=0;
-b=2;
-error = 100;
-count = 0;
-p=0;
-while abs(error) > 10^-8
-    p_pre = p;
-    p = (a+b)/2;
-    if prob4_f(p)>0
-        b = p;
-    else
-        a = p;
-    end
-    count = count + 1;
-    error = abs(p - p_pre)/p;
+h = 10^-7;
+sum=0;
+x = h;
+y = -1;
+while(y < 0)
+    sum = sum + (prob4_f(x) + prob4_f(x - h)) * h * 1/2;
+    x = x + h;
+    y = sum - 0.35;
 end
-fprintf(1, 'The x is %.6f\n', a);
+fprintf(1, 'The x is %.6f\n', x);
