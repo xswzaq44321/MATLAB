@@ -1,4 +1,6 @@
 function [outputArg] = n(x, y, mux,sdx, muy,sdy, rho)
+%N calculate normal distribution
+%input (vector, vector, float, float, float, float, float)
 	for i = 1: length(x)
 		for j = 1: length(y)
 			z = (x(i) - mux)^2/(sdx^2) + (y(j) - muy)^2/(sdy^2) - 2*rho*(x(i) - mux)*(y(j) - muy)/(sdx*sdy);
