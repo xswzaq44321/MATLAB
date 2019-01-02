@@ -1,0 +1,8 @@
+function [outputArg] = n(x, y, mux,sdx, muy,sdy, rho)
+	for i = 1: length(x)
+		for j = 1: length(y)
+			
+		end
+	end
+end
+
